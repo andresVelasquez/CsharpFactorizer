@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AndresConsoleApp1
 {
-	class Program
+	class Factorizer
 	{
 		static void Main(string[] args)
 		{
@@ -46,7 +46,7 @@ namespace AndresConsoleApp1
 					counter++;
 					continue;
 				}
-				Program doThat = new Program(); // Seems I need an instance of this class to call its method. OOP gone crazy?
+				Factorizer doThat = new Factorizer(); // Seems I need an instance of this class to call its method. OOP gone crazy?
 				List<long> factors = doThat.Factorize(Convert.ToInt64(line)); // Lines from the file appear to be put into strings so have to cast to long before calling Factorize.
 				if (factors.Count == 1)
 				{

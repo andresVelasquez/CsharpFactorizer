@@ -33,8 +33,7 @@ namespace AndresConsoleApp1
 			while ((line = file.ReadLine()) != null) // Assigns, one by one, each line in the read file to variable "line". Next block executes if line is not null.
 			{
 				Console.WriteLine(line);
-				int number;
-				bool checkIfInteger = Int32.TryParse(line, out number);
+				bool checkIfInteger = Int32.TryParse(line, out int number);
 				if (!(checkIfInteger) || number < 1) // I'm only going to consider positive integers
 				{
 					Console.WriteLine(line + " is not an integer greater than 1" + Environment.NewLine);

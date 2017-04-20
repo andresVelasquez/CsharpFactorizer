@@ -1,0 +1,6 @@
+c:\users\andres\documents\visual studio 2017\Projects\AndresConsoleApp1\AndresConsoleApp1\bin\Debug\AndresConsoleApp1.exe.config
+c:\users\andres\documents\visual studio 2017\Projects\AndresConsoleApp1\AndresConsoleApp1\bin\Debug\AndresConsoleApp1.exe
+c:\users\andres\documents\visual studio 2017\Projects\AndresConsoleApp1\AndresConsoleApp1\bin\Debug\AndresConsoleApp1.pdb
+c:\users\andres\documents\visual studio 2017\Projects\AndresConsoleApp1\AndresConsoleApp1\obj\Debug\AndresConsoleApp1.csprojResolveAssemblyReference.cache
+c:\users\andres\documents\visual studio 2017\Projects\AndresConsoleApp1\AndresConsoleApp1\obj\Debug\AndresConsoleApp1.exe
+c:\users\andres\documents\visual studio 2017\Projects\AndresConsoleApp1\AndresConsoleApp1\obj\Debug\AndresConsoleApp1.pdb

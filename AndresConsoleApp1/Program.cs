@@ -33,14 +33,22 @@ namespace AndresConsoleApp1
 			while ((line = file.ReadLine()) != null) // Assigns, one by one, each line in the read file to variable "line". Next block executes if line is not null.
 			{
 				Console.WriteLine(line);
+				int number;
+				bool checkIfInteger = Int32.TryParse(line, out number);
+				if (!(checkIfInteger) || number < 1) // I'm only going to consider positive integers
+				{
+					Console.WriteLine(line + " is not an integer greater than 1" + Environment.NewLine);
+					counter++;
+					continue;
+				}
 				if (Convert.ToInt64(line) == 1)
 				{
-					Console.WriteLine("The loneliest number? Yes. Prime? No." + Environment.NewLine); // I'm not going to error handle the entries in the file for numbers less than one, floating numbers, strings, etc. but will make an exception for 1 so I can put this corny joke in. 
+					Console.WriteLine("The loneliest number? Yes. Prime? No." + Environment.NewLine); // I could just make the above check "< 2" instead of 1 but then I wouldn't get to make this corny joke!
 					counter++;
 					continue;
 				}
 				Program doThat = new Program(); // Seems I need an instance of this class to call its method. OOP gone crazy?
-				List<long> factors = doThat.Factorize(Convert.ToInt64(line)); // Lines from the file seem to be put into strings so have to cast to long before calling Factorize.
+				List<long> factors = doThat.Factorize(Convert.ToInt64(line)); // Lines from the file appear to be put into strings so have to cast to long before calling Factorize.
 				if (factors.Count == 1)
 				{
 					Console.WriteLine(line + " is prime." + Environment.NewLine); // If factorize returned a list containing just one thing (which will be the original number passed), that means the number is prime so I'll just print that.

@@ -43,7 +43,7 @@ namespace AndresConsoleApp1
 				List<long> factors = doThat.Factorize(Convert.ToInt64(line)); // Lines from the file seem to be put into strings so have to cast to long before calling Factorize.
 				if (factors.Count == 1)
 				{
-					Console.WriteLine(line + " is prime." + Environment.NewLine); // If factorize returned a list containing just the original number passed that means the number is prime so I'll just print that.
+					Console.WriteLine(line + " is prime." + Environment.NewLine); // If factorize returned a list containing just one thing (which will be the original number passed), that means the number is prime so I'll just print that.
 				}
 				else
 				{
